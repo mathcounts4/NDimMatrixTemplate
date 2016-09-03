@@ -5,12 +5,14 @@
 #include <iostream>
 #include "Matrix2D.hpp"
 
+// Debug printing: Print the location before each small test
 #ifdef DEBUG
 #define QQ std::cout << "line " << __LINE__ << " in " << __FUNCTION__ << std::endl
 #else
 #define QQ 0
 #endif
 
+// This might be defined to perform debug printing in the matrix classes
 #ifdef Q
 #undef Q
 #endif
